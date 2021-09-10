@@ -76,7 +76,25 @@ Phase 5 - Reading chip
 19. Enter corresponding sample ID on screen to chip location
 20. Scan chip ID on main screen
 21. Open tray, load chip and scan
+22. Once scanning is finished open in crystal miner
 
 ### Important Notes:
 
--
+224096835
+
+MT-COX3 Forward 5' - CGA GTC TCC CTT CAC CAT TTC - 3'
+
+IDT - 309969598
+
+224096836
+
+MT-COX3 Reverse 5' - TTG GCG GAT GAA GCA GAT AG - 3'
+
+IDT - 309969599
+
+MT-ND2 Forward 5' - ACC TGA GTA GGC CTA GAA ATA ACC - 3'
+
+MT-ND2 Reverse 5' - GTT GCT TGC GTG AGG AAA TAC - 3'
+
+Probe MT-ND2 HEX
+Probe MT-COX3 FAM
