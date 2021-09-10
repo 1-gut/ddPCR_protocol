@@ -67,6 +67,16 @@ Phase 4 - Run ddPCR
 
 Phase 5 - Reading chip
 
+18. Open Stilla CrystalReader
+    - Load image analaysis configuration: `C:/Program Files/Stilla/CrystalReader/config/AnalysisConfigurationFile_Prism3_SapphireChip_naica_multiplex-PCR-MIX_Taqman_v1.0.yaml`
+    - Scanning Parameters:
+      - Blue 65ms
+      - Green 200ms
+      - Red 40ms
+19. Enter corresponding sample ID on screen to chip location
+20. Scan chip ID on main screen
+21. Open tray, load chip and scan
+
 ### Important Notes:
 
 -
