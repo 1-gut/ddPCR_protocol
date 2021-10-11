@@ -102,6 +102,11 @@ _Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 samp
 - MT-ND2 Reverse 5' - GTT GCT TGC GTG AGG AAA TAC - 3'
 - Probe MT-ND2 HEX
 
+### 16S:
+- 16S Forward 5' - CGA AAG CGT GGG GAG CAA A - 3'
+- 16S Reverse 5' - GTT CGT ACT CCC CAG GCG G - 3'
+- Probe 16S FAM
+
 ### Experimental Results 10 Sep 2021
 
 GAPDH gene did not amplify well.
