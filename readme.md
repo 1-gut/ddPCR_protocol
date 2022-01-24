@@ -13,11 +13,12 @@ There are a few stages and mixes to be created before running the dPCR chip:
 ### Before starting this protocol
 
 Defrost the following:
-
 - Samples
 - EcoRI and EcoRI buffer
 - Stilla MasterMix 5X and Buffer B
 - COX3/ND2 primers and probes
+
+You will need approximately 50 collection tubes for 24 samples.
 
 
 ### Phase 1 - Digest step
@@ -38,7 +39,7 @@ Defrost the following:
 
 ### Phase 2 - Prepare primers and probes
 
-6. Make 20ul of primer-probe mix (for 12 samples) according to table below:
+7. Make 20ul of primer-probe mix according to table below:
 
 | Reagents                            | Mitochondrial DNA primers (COX3/ND2 Duplex) for 24 samples | Genomic DNA primers (GAPDH) (Deprecated) for 12 samples |
 |-------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
@@ -52,7 +53,6 @@ Defrost the following:
 | Nuclease free water                 | 15ul                                                       | 13.75ul                                                 |
 | **Total Volume**                    | 40ul                                                       | 20ul                                                    |
 
-7. Add the regaents above to make primer-probe mix A (genomic) and primer-probe mix B (mitochondrial)
 
 ### Phase 3 - Prepare the two mastermixes A and B
 
@@ -71,35 +71,35 @@ _Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 samp
 | DNA Sample                                  |             | 2           |                  |                   |                   |
 | Final Volume                                |             | 25          |                  |                   |                   |
 
-10. For 24 samples prepare mix as indicated in table (we use 30 to provide sufficient buffer).
-11. Add 23ul of above mastermix into individual tubes
-12. Add 2ul of DNA sample from phase 1 into individual tubes
-13. Prepare sapphire chip - take white port off.
-14. Load Sapphire chip with 25ul of above by dropping liquid onto top of oil and cover with white adapter
+8. For 24 samples prepare mix as indicated in table (we use 30 to provide sufficient buffer).
+9. Add 23ul of above mastermix into individual tubes
+10. Add 2ul of DNA sample from phase 1 into individual tubes
+11. Prepare sapphire chip - take white port off.
+12. Load Sapphire chip with 25ul of above by dropping liquid onto top of oil and cover with white adapter
 
 ### Phase 4 - Run ddPCR
 
-15. Turn on pump and ensure pressure between 1.2-1.3 bar.
-16. Turn on main ddPCR machine and set program as follows:
+13. Turn on pump and ensure pressure between 1.2-1.3 bar.
+14. Turn on main ddPCR machine and set program as follows:
     - Partition at 40&deg;C with Sapphire chip
     - Temperature 95&deg;C, 3 minutes wait
     - Cycle 47x
     - 95&deg;C with 15 seconds wait
     - 52&deg;C with 20 seconds wait
     - Close cycle
-17. Wipe bottom of Sapphire chip with antistatic wipe then load chip into ddPCR machine and start
+15. Wipe bottom of Sapphire chip with antistatic wipe then load chip into ddPCR machine and start
 
 ### Phase 5 - ddPCR Chip Reading
 
-18. Open Stilla CrystalReader
+16. Open Stilla CrystalReader
     - Scanning Parameters:
       - Blue 65ms - COX3
       - Green 200ms - ND2
       - Red 40ms (no target but must be set for reading to happen.)
-19. Enter corresponding sample ID on screen to chip location
-20. Scan chip ID on main screen
-21. Open tray, load chip and scan
-22. Once scanning is finished open in crystal miner
+17. Enter corresponding sample ID on screen to chip location
+18. Scan chip ID on main screen
+19. Open tray, load chip and scan
+20. Once scanning is finished open in crystal miner
 
 ## Important Notes:
 
