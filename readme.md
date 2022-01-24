@@ -2,59 +2,76 @@
 
 ## Overview
 
-There are a few mixes to be made before running the chip:
+There are a few stages and mixes to be created before running the dPCR chip:
 
-- DNA sample with EcoRI mix and digest
-- Primer and probe mix
-- Main mix
+1. DNA sample with EcoRI mix and digest
+2. Primer and probe mix
+3. Main mix
 
 ## Step-by-step:
 
+### Before starting this protocol
+
+Defrost the following:
+
+- Samples
+- EcoRI and EcoRI buffer
+- Stilla MasterMix 5X and Buffer B
+- COX3/ND2 primers and probes
+
+
 ### Phase 1 - Digest step
 
-| Reagent             | Volume |
-| ------------------- | ------ |
-| Nuclease free water | 3ul    |
-| 10X buffer          | 1ul    |
-| EcoRI               | 1ul    |
-| DNA Sample          | 5ul    |
+| Reagent (per sample) | Volume |
+| -------------------- | ------ |
+| Nuclease free water  | 3ul    |
+| 10X buffer           | 1ul    |
+| EcoRI                | 1ul    |
+| DNA Sample           | 5ul    |
 
 1. Add 3ul of nuclease free water to each sample tube
 2. Add 1ul of 10X EcoRI buffer
 3. Add 1ul of EcoRI
 4. Add 5ul of DNA sample
 5. Incubate at 37&deg;C for 30 mins
+6. While incubating, proceed make phase 2 and 3 mixes.
 
 ### Phase 2 - Prepare primers and probes
 
 6. Make 20ul of primer-probe mix (for 12 samples) according to table below:
 
-| Reagents                                       | Genomic DNA primers (GAPDH) A | Mitochondrial DNA primers (COX3/ND2 Duplex) B |
-| ---------------------------------------------- | ----------------------------- | --------------------------------------------- |
-| GAPDH Ready mixed primers and probe            | 6.25ul                        |                                               |
-| ND2 Primers (Mix 2.5ul forward and 2.5ul reverse)  |                               | 5ul                                           |
-| ND2 Probe                                      |                               | 1.25ul                                        |
-| COX3 Primers (Mix 2.5ul forward and 2.5ul reverse) |                               | 5ul                                           |
-| COX3 Probe                                     |                               | 1.25ul                                        |
-| Nuclease free water                            | 13.75ul                       | 7.5ul                                         |
-| **Total Volume**                               | 20ul                          | 20ul                                          |
+| Reagents                            | Mitochondrial DNA primers (COX3/ND2 Duplex) for 24 samples | Genomic DNA primers (GAPDH) (Deprecated) for 12 samples |
+|-------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
+| GAPDH Ready mixed primers and probe |                                                            | 6.25ul                                                  |
+| ND2 Forward Primer                  | 5ul                                                        |                                                         |
+| ND2 Reverse Primer                  | 5ul                                                        |                                                         |
+| ND2 Probe                           | 2.5ul                                                      |                                                         |
+| COX3 Forward Primer                 | 5ul                                                        |                                                         |
+| COX3 Reverse Primer                 | 5ul                                                        |                                                         |
+| COX3 Probe                          | 2.5ul                                                      |                                                         |
+| Nuclease free water                 | 15ul                                                       | 13.75ul                                                 |
+| **Total Volume**                    | 40ul                                                       | 20ul                                                    |
 
 7. Add the regaents above to make primer-probe mix A (genomic) and primer-probe mix B (mitochondrial)
 
 ### Phase 3 - Prepare the two mastermixes A and B
 
-_Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 samples/3 chips - 1 sample buffer volume)_
-| | Final Conc. | Volume (ul) | Volume (ul) | Volume (ul) | Volume (ul) |
-|----------------------------------|-------------|-------------|-------------|-------------|-------------|
-| Number of Samples | | 1 | 9 | 13 | 26 |
-| H2O | | 16 | 144 | 208 | 416 |
-| Naica Multiplex PCR MasterMix 5X | 1X | 5 | 45 | 65 | 130 |
-| Buffer B | 4% | 1 | 9 | 13 | 26 |
-| Probe and Primer Mix 25X | 1X | 1 | 9 | 13 | 26 |
-| DNA Mix | | 2 | | | |
-| Final Volume | | 25 | | | |
+The reference table below shows the composition required for a single sample and the calculations for running multiple samples with an appropriate volume buffer.
 
-10. For 12 samples prepare 208ul of water, 65ul of PCR MasterMix 5X, 13ul of Buffer B, 13ul of primer-probe mix from phase 2.
+_Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 samples/3 chips - 1 sample buffer volume)_
+|                                             | Final Conc. | Volume (ul) | Volume (ul)      | Volume (ul)       | Volume (ul)       |
+|---------------------------------------------|-------------|-------------|------------------|-------------------|-------------------|
+| Desired Number of Samples                   |             |             | 8 actual samples | 12 actual samples | 24 actual samples |
+| Sample multiplier to include reserve buffer |             | 1X          | 10X              | 15X               | 30X               |
+| H2O                                         |             | 16          | 160              | 240               | 480               |
+| Naica Multiplex PCR MasterMix 5X            | 1X          | 5           | 50               | 75                | 150               |
+| Buffer B                                    | 4%          | 1           | 10               | 15                | 30                |
+| Probe and Primer Mix 25X                    | 1X          | 1           | 10               | 15                | 30                |
+| Subtotal Volume                             |             | 23          | 230              | 345               | 690               |
+| DNA Sample                                  |             | 2           |                  |                   |                   |
+| Final Volume                                |             | 25          |                  |                   |                   |
+
+10. For 24 samples prepare mix as indicated in table (we use 30 to provide sufficient buffer).
 11. Add 23ul of above mastermix into individual tubes
 12. Add 2ul of DNA sample from phase 1 into individual tubes
 13. Prepare sapphire chip - take white port off.
@@ -75,12 +92,10 @@ _Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 samp
 ### Phase 5 - ddPCR Chip Reading
 
 18. Open Stilla CrystalReader
-    - Load image analysis configuration: `C:/Program Files/Stilla/CrystalReader/config/AnalysisConfigurationFile_Prism3_SapphireChip_naica_multiplex-PCR-MIX_Taqman_v1.0.yaml`
-    - Note image analysis config can be left blank actually
     - Scanning Parameters:
-      - Blue 65ms
-      - Green 200ms
-      - Red 40ms
+      - Blue 65ms - COX3
+      - Green 200ms - ND2
+      - Red 40ms (no target but must be set for reading to happen.)
 19. Enter corresponding sample ID on screen to chip location
 20. Scan chip ID on main screen
 21. Open tray, load chip and scan
@@ -105,6 +120,12 @@ _Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 samp
 - 16S Reverse 5' - GTT CGT ACT CCC CAG GCG G - 3'
 - Probe 16S FAM
 
-### Experimental Results 10 Sep 2021
+## Protocol Updates
 
-GAPDH gene did not amplify well.
+### 24 Jan 2022
+- Protocol cleaned up with key steps clarified for running 24 samples as default (6 chips - current maximum in a single session).
+- MasterMix volume adjusted to provide more reserve.
+### 10 Sep 2021
+
+- GAPDH gene did not amplify well.
+- GAPDH amplification is now deprecated.
