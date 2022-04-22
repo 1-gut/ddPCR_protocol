@@ -41,6 +41,8 @@ You will need approximately 50 collection tubes for 24 samples.
 
 7. Make 20ul of primer-probe mix according to table below:
 
+#### Sapphire
+
 | Reagents                            | Mitochondrial DNA primers (COX3/ND2 Duplex) for 24 samples | Genomic DNA primers (GAPDH) (Deprecated) for 12 samples |
 |-------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
 | GAPDH Ready mixed primers and probe |                                                            | 6.25ul                                                  |
@@ -53,6 +55,19 @@ You will need approximately 50 collection tubes for 24 samples.
 | Nuclease free water                 | 15ul                                                       | 13.75ul                                                 |
 | **Total Volume**                    | 40ul                                                       | 20ul                                                    |
 
+
+#### Opal
+
+| Reagents                            | Mitochondrial DNA primers (COX3/ND2 Duplex) for 16 samples | for 32 samples |
+|-------------------------------------|------------------------------------------------------------|---------------------------------------------------------|                                               
+| ND2 Forward Primer                  | 5ul                                                        |    10ul   |
+| ND2 Reverse Primer                  | 5ul                                                        |     10ul                                  |
+| ND2 Probe                           | 2.5ul                                                      |     5ul                                  |
+| COX3 Forward Primer                 | 5ul                                                        |       10ul                                  |
+| COX3 Reverse Primer                 | 5ul                                                        |      10ul                                     |
+| COX3 Probe                          | 2.5ul                                                      |               5ul                               |
+| Nuclease free water                 | 15ul                                                       | 30ul                                                 |
+| **Total Volume**                    | 40ul                                                       | 80ul                                                    |
 
 ### Phase 3 - Prepare the two mastermixes A and B
 
@@ -121,6 +136,9 @@ _Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 samp
 - Probe 16S FAM
 
 ## Protocol Updates
+
+### 22 Apr 2022
+- Opal chips added for scalability
 
 ### 24 Jan 2022
 - Protocol cleaned up with key steps clarified for running 24 samples as default (6 chips - current maximum in a single session).
