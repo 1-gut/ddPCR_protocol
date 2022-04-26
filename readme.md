@@ -8,18 +8,18 @@ There are a few stages and mixes to be created before running the dPCR chip:
 2. Primer and probe mix
 3. Main mix
 
-## Step-by-step:
+## Step-by-step
 
 ### Before starting this protocol
 
 Defrost the following:
+
 - Samples
 - EcoRI and EcoRI buffer
 - Stilla MasterMix 5X and Buffer B
 - COX3/ND2 primers and probes
 
 You will need approximately 50 collection tubes for 24 samples.
-
 
 ### Phase 1 - Digest step
 
@@ -39,7 +39,7 @@ You will need approximately 50 collection tubes for 24 samples.
 
 ### Phase 2 - Prepare primers and probes
 
-7. Make 20ul of primer-probe mix according to table below:
+7. Make primer-probe mixes according to table below:
 
 #### Sapphire
 
@@ -55,7 +55,6 @@ You will need approximately 50 collection tubes for 24 samples.
 | Nuclease free water                 | 15ul                                                       | 13.75ul                                                 |
 | **Total Volume**                    | 40ul                                                       | 20ul                                                    |
 
-
 #### Opal
 
 | Reagents | Mitochondrial DNA primers (COX3/ND2 Duplex) |  |  |
@@ -70,11 +69,14 @@ You will need approximately 50 collection tubes for 24 samples.
 | Nuclease free water | 7.5ul | 15ul | 15ul |
 | Total Volume | 20ul | 40ul | 40ul |
 
-### Phase 3 - Prepare the two mastermixes A and B
+### Phase 3 - Prepare the mastermixes
 
 The reference table below shows the composition required for a single sample and the calculations for running multiple samples with an appropriate volume buffer.
 
-_Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 samples/3 chips - 1 sample buffer volume)_
+Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 samples/3 chips - 1 sample buffer volume)
+
+#### Sapphire
+
 |                                             | Final Conc. | Volume (ul) | Volume (ul)      | Volume (ul)       | Volume (ul)       |
 |---------------------------------------------|-------------|-------------|------------------|-------------------|-------------------|
 | Desired Number of Samples                   |             |             | 8 actual samples | 12 actual samples | 24 actual samples |
@@ -87,7 +89,8 @@ _Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 samp
 | DNA Sample                                  |             | 2           |                  |                   |                   |
 | Final Volume                                |             | 25          |                  |                   |                   |
 
-Opal
+#### Opal
+
 | Reagents | Mitochondrial DNA primers (COX3/ND2 Duplex) |  |  |  |  |
 |---|---|---|---|---|---|
 | Final Conc. | Volume (ul) | Volume (ul) | Volume (ul) | Volume (ul) |  |
@@ -101,11 +104,11 @@ Opal
 | DNA Sample |  | 1 |  |  |  |
 | Final Volume |  | 25 |  |  |  |
 
-8. For 24 samples prepare mix as indicated in table (we use 30 to provide sufficient buffer).
-9. Add 23ul of above mastermix into individual tubes
-10. Add 2ul of DNA sample from phase 1 into individual tubes
+8. For 24 samples prepare mix as indicated in table (we use 30X calculation to provide sufficient buffer).
+9. Add 23ul of above mastermix into individual tubes (For Opal add 7ul of mastermix)
+10. Add 2ul of DNA sample from phase 1 into individual tubes (For Opal add 1ul of DNA sample)
 11. Prepare sapphire chip - take white port off.
-12. Load Sapphire chip with 25ul of above by dropping liquid onto top of oil and cover with white adapter
+12. Load Sapphire chip with 25ul of above by dropping liquid onto top of oil and cover with white adapter (Load Opal chip with 8ul, for Opal get rid of any remaining air bubbles with opal pen)
 
 ### Phase 4 - Run ddPCR
 
@@ -117,35 +120,36 @@ Opal
     - 95&deg;C with 15 seconds wait
     - 52&deg;C with 20 seconds wait
     - Close cycle
-15. Wipe bottom of Sapphire chip with antistatic wipe then load chip into ddPCR machine and start
+15. Wipe bottom of chip with antistatic wipe then load chip into ddPCR machine and start
 
 ### Phase 5 - ddPCR Chip Reading
 
 16. Open Stilla CrystalReader
     - Scanning Parameters:
       - Blue 65ms - COX3
-      - Green 200ms - ND2
+      - Green 200ms - ND2 (For opal, reduce to 100ms)
       - Red 40ms (no target but must be set for reading to happen.)
 17. Enter corresponding sample ID on screen to chip location
 18. Scan chip ID on main screen
 19. Open tray, load chip and scan
 20. Once scanning is finished open in crystal miner
 
-## Important Notes:
+## Important Notes
 
-### COX3:
+### COX3
 
 - MT-COX3 Forward 5' - CGA GTC TCC CTT CAC CAT TTC - 3'
 - MT-COX3 Reverse 5' - TTG GCG GAT GAA GCA GAT AG - 3'
 - Probe MT-COX3 FAM
 
-### ND2:
+### ND2
 
 - MT-ND2 Forward 5' - ACC TGA GTA GGC CTA GAA ATA ACC - 3'
 - MT-ND2 Reverse 5' - GTT GCT TGC GTG AGG AAA TAC - 3'
 - Probe MT-ND2 HEX
 
-### 16S:
+### 16S
+
 - 16S Forward 5' - CGA AAG CGT GGG GAG CAA A - 3'
 - 16S Reverse 5' - GTT CGT ACT CCC CAG GCG G - 3'
 - Probe 16S FAM
@@ -153,11 +157,14 @@ Opal
 ## Protocol Updates
 
 ### 22 Apr 2022
+
 - Opal chips added for scalability
 
 ### 24 Jan 2022
+
 - Protocol cleaned up with key steps clarified for running 24 samples as default (6 chips - current maximum in a single session).
 - MasterMix volume adjusted to provide more reserve.
+
 ### 10 Sep 2021
 
 - GAPDH gene did not amplify well.
