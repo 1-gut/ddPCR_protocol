@@ -58,16 +58,17 @@ You will need approximately 50 collection tubes for 24 samples.
 
 #### Opal
 
-| Reagents                            | Mitochondrial DNA primers (COX3/ND2 Duplex) for 16 samples | for 32 samples |
-|-------------------------------------|------------------------------------------------------------|---------------------------------------------------------|                                               
-| ND2 Forward Primer                  | 5ul                                                        |    10ul   |
-| ND2 Reverse Primer                  | 5ul                                                        |     10ul                                  |
-| ND2 Probe                           | 2.5ul                                                      |     5ul                                  |
-| COX3 Forward Primer                 | 5ul                                                        |       10ul                                  |
-| COX3 Reverse Primer                 | 5ul                                                        |      10ul                                     |
-| COX3 Probe                          | 2.5ul                                                      |               5ul                               |
-| Nuclease free water                 | 15ul                                                       | 30ul                                                 |
-| **Total Volume**                    | 40ul                                                       | 80ul                                                    |
+| Reagents | Mitochondrial DNA primers (COX3/ND2 Duplex) |  |  |
+|---|---|---|---|
+|  | 16 samples | 32 samples | 48 samples |
+| ND2 Forward Primer | 2.5ul | 5ul | 5ul |
+| ND2 Reverse Primer | 2.5ul | 5ul | 5ul |
+| ND2 Probe | 1.25ul | 2.5ul | 2.5ul |
+| COX3 Forward Primer | 2.5ul | 5ul | 5ul |
+| COX3 Reverse Primer | 2.5ul | 5ul | 5ul |
+| COX3 Probe | 1.25ul | 2.5ul | 2.5ul |
+| Nuclease free water | 7.5ul | 15ul | 15ul |
+| Total Volume | 20ul | 40ul | 40ul |
 
 ### Phase 3 - Prepare the two mastermixes A and B
 
@@ -85,6 +86,20 @@ _Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 samp
 | Subtotal Volume                             |             | 23          | 230              | 345               | 690               |
 | DNA Sample                                  |             | 2           |                  |                   |                   |
 | Final Volume                                |             | 25          |                  |                   |                   |
+
+Opal
+| Reagents | Mitochondrial DNA primers (COX3/ND2 Duplex) |  |  |  |  |
+|---|---|---|---|---|---|
+| Final Conc. | Volume (ul) | Volume (ul) | Volume (ul) | Volume (ul) |  |
+| Desired Number of Samples |  |  | 16 actual samples | 32 actual samples | 48 actual samples |
+| Sample multiplier to include reserve buffer |  | 1X | 20X | 40X | 60X |
+| H2O |  | 4.44 | 88.8 | 177.6 | 266.4 |
+| Naica Multiplex PCR MasterMix 5X | 1X | 1.6 | 32 | 64 | 96 |
+| Buffer B | 4% | 0.32 | 6.4 | 12.8 | 19.2 |
+| Probe and Primer Mix 25X | 1X | 0.64 | 12.8 | 25.6 | 38.4 |
+| Subtotal Volume |  | 7 | 140 | 280 | 420 |
+| DNA Sample |  | 1 |  |  |  |
+| Final Volume |  | 25 |  |  |  |
 
 8. For 24 samples prepare mix as indicated in table (we use 30 to provide sufficient buffer).
 9. Add 23ul of above mastermix into individual tubes
