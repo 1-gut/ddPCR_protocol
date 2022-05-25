@@ -127,7 +127,7 @@ Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 sampl
 16. Open Stilla CrystalReader
     - Scanning Parameters:
       - Blue 65ms - COX3
-      - Green 200ms - ND2 (For opal, reduce to 100ms)
+      - Green 100ms - ND2
       - Red 40ms (no target but must be set for reading to happen.)
 17. Enter corresponding sample ID on screen to chip location
 18. Scan chip ID on main screen
