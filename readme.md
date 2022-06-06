@@ -43,17 +43,17 @@ You will need approximately 50 collection tubes for 24 samples.
 
 #### Sapphire
 
-| Reagents                            | Mitochondrial DNA primers (COX3/ND2 Duplex) for 24 samples | Genomic DNA primers (GAPDH) (Deprecated) for 12 samples |
-|-------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
-| GAPDH Ready mixed primers and probe |                                                            | 6.25ul                                                  |
-| ND2 Forward Primer                  | 5ul                                                        |                                                         |
-| ND2 Reverse Primer                  | 5ul                                                        |                                                         |
-| ND2 Probe                           | 2.5ul                                                      |                                                         |
-| COX3 Forward Primer                 | 5ul                                                        |                                                         |
-| COX3 Reverse Primer                 | 5ul                                                        |                                                         |
-| COX3 Probe                          | 2.5ul                                                      |                                                         |
-| Nuclease free water                 | 15ul                                                       | 13.75ul                                                 |
-| **Total Volume**                    | 40ul                                                       | 20ul                                                    |
+| Reagents | COX3/ND2 Duplex for 24 samples | GAPDH/ND2 Duplex for 24 samples | GAPDH Mono for 12 samples |
+|---|---|---|---|
+| GAPDH Ready mixed primers and probe |  | 12.5ul | 6.25ul |
+| ND2 Forward Primer | 5ul | 5ul |  |
+| ND2 Reverse Primer | 5ul | 5ul |  |
+| ND2 Probe | 2.5ul | 2.5ul |  |
+| COX3 Forward Primer | 5ul | - |  |
+| COX3 Reverse Primer | 5ul | - |  |
+| COX3 Probe | 2.5ul | - |  |
+| Nuclease free water | 15ul | 15ul | 13.75ul |
+| **Total Volume** | 40ul | 40ul | 20ul |
 
 #### Opal
 
@@ -126,10 +126,14 @@ Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 sampl
 ### Phase 5 - ddPCR Chip Reading
 
 16. Open Stilla CrystalReader
-    - Scanning Parameters:
-      - Blue 65ms - COX3
-      - Green 100ms - ND2
-      - Red 40ms (no target but must be set for reading to happen.)
+    - Scanning Parameters for COX3/ND2:
+        - Blue 65ms - COX3
+        - Green 100ms - ND2
+        - Red 40ms (no target but must be set for reading to happen.)
+    - Scanning parameters for GAPDH/ND2;
+        - Blue 100ms - GAPDH
+        - Green 100ms - ND2
+        - Red 40ms - blank
 17. Enter corresponding sample ID on screen to chip location
 18. Scan chip ID on main screen
 19. Open tray, load chip and scan
@@ -155,7 +159,20 @@ Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 sampl
 - 16S Reverse 5' - GTT CGT ACT CCC CAG GCG G - 3'
 - Probe 16S FAM
 
+### GAPDH
+
+- GAPDH copy number assay from ThermoFisher (Cat no. 4400291) [Link here](https://www.thermofisher.com/order/catalog/product/4400291)
+
 ## Protocol Updates
+
+### 6 Jun 2022
+
+- Further attempt with GAPDH
+- GAPDH primer and probes confirmed to be working on mono assay
+- GAPDH/ND2 duplex confirmed to be working
+- Results of ND2 is in line with previous COX3/ND2 assay
+- Results of GAPDH is in line between mono and duplex assays
+- GAPDH/ND2 reinstated for future work (COX3 and ND2 confirmed to be almost perfectly correlated, R=0.997)
 
 ### 22 Apr 2022
 
@@ -169,5 +186,5 @@ Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 sampl
 
 ### 10 Sep 2021
 
-- GAPDH gene did not amplify well.
-- GAPDH amplification is now deprecated.
+- GAPDH gene did not amplify well. (6 June 2022 update - likely because sample did not have much genomic cfDNA in first place, retested on new array of samples and primer-probe confirmed to be working)
+- GAPDH amplification is now deprecated. (6 June 2022 update - because COX3 and ND2 are correlated at 0.997, plan to transition to GAPDH/ND2 duplex)
