@@ -105,10 +105,11 @@ Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 sampl
 | Final Volume |  | 25 |  |  |  |
 
 8. For 24 samples prepare mix as indicated in table (we use 30X calculation to provide sufficient buffer).
-9. Add 23ul of above mastermix into individual tubes (For Opal add 7ul of mastermix)
+9. Add 23ul of above mastermix into individual tubes (For Opal add 7ul of mastermix). **Top tip:** Use p20 and pipette 2x 11.5ul for better accuracy.
 10. Add 2ul of DNA sample from phase 1 into individual tubes (For Opal add 1ul of DNA sample)
-11. Prepare sapphire chip - take white port off.
-12. Load Sapphire chip with 25ul of above by dropping liquid onto top of oil and cover with white adapter (Load Opal chip with 8ul, for Opal get rid of any remaining air bubbles with opal pen)
+11. **Top tip:** Spin these samples in a tabletop centrifuge for a few seconds to mix evenly.
+12. Prepare sapphire chip - take white port off.
+13. Load Sapphire chip with 25ul of above by dropping liquid onto top of oil and cover with white adapter (Load Opal chip with 8ul, for Opal get rid of any remaining air bubbles with opal pen)
 
 ### Phase 4 - Run ddPCR
 
@@ -159,6 +160,7 @@ Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 sampl
 ### 22 Apr 2022
 
 - Opal chips added for scalability
+- **Final decision:** Continue using Sapphire for now, Opal is technically finicky with the loading of samples and it has reduced margins of error as only 8ul is loaded vs 25ul
 
 ### 24 Jan 2022
 
