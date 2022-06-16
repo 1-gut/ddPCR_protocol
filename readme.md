@@ -1,4 +1,4 @@
-# ddPCR Protocol using Stilla Sapphire
+# ddPCR Protocol using Stilla Sapphire (GAPDH/ND2 Duplex)
 
 ## Overview
 
@@ -17,7 +17,7 @@ Defrost the following:
 - Samples
 - EcoRI and EcoRI buffer
 - Stilla MasterMix 5X and Buffer B
-- COX3/ND2 primers and probes
+- ND2/GAPDH primers and probes
 
 You will need approximately 50 collection tubes for 24 samples.
 
@@ -41,9 +41,9 @@ You will need approximately 50 collection tubes for 24 samples.
 
 7. Make primer-probe mixes according to table below:
 
-#### Sapphire
+#### Sapphire primer and probe
 
-| Reagents | COX3/ND2 Duplex for 24 samples | GAPDH/ND2 Duplex for 24 samples | GAPDH Mono for 12 samples |
+| Reagents | COX3/ND2 Duplex for 24 samples (Deprecated) | **GAPDH/ND2 Duplex for 24 samples** | GAPDH Mono for 12 samples (For reference only) |
 |---|---|---|---|
 | GAPDH Ready mixed primers and probe |  | 12.5ul | 6.25ul |
 | ND2 Forward Primer | 5ul | 5ul |  |
@@ -55,27 +55,11 @@ You will need approximately 50 collection tubes for 24 samples.
 | Nuclease free water | 15ul | 15ul | 13.75ul |
 | **Total Volume** | 40ul | 40ul | 20ul |
 
-#### Opal
-
-| Reagents | Mitochondrial DNA primers (COX3/ND2 Duplex) |  |  |
-|---|---|---|---|
-|  | 16 samples | 32 samples | 48 samples |
-| ND2 Forward Primer | 2.5ul | 5ul | 5ul |
-| ND2 Reverse Primer | 2.5ul | 5ul | 5ul |
-| ND2 Probe | 1.25ul | 2.5ul | 2.5ul |
-| COX3 Forward Primer | 2.5ul | 5ul | 5ul |
-| COX3 Reverse Primer | 2.5ul | 5ul | 5ul |
-| COX3 Probe | 1.25ul | 2.5ul | 2.5ul |
-| Nuclease free water | 7.5ul | 15ul | 15ul |
-| Total Volume | 20ul | 40ul | 40ul |
-
 ### Phase 3 - Prepare the mastermixes
 
 The reference table below shows the composition required for a single sample and the calculations for running multiple samples with an appropriate volume buffer.
 
-Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 samples/3 chips - 1 sample buffer volume)
-
-#### Sapphire
+#### Sapphire mastermix
 
 |                                             | Final Conc. | Volume (ul) | Volume (ul)      | Volume (ul)       | Volume (ul)       |
 |---------------------------------------------|-------------|-------------|------------------|-------------------|-------------------|
@@ -89,27 +73,12 @@ Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 sampl
 | DNA Sample                                  |             | 2           |                  |                   |                   |
 | Final Volume                                |             | 25          |                  |                   |                   |
 
-#### Opal
-
-| Reagents | Mitochondrial DNA primers (COX3/ND2 Duplex) |  |  |  |  |
-|---|---|---|---|---|---|
-| Final Conc. | Volume (ul) | Volume (ul) | Volume (ul) | Volume (ul) |  |
-| Desired Number of Samples |  |  | 16 actual samples | 32 actual samples | 48 actual samples |
-| Sample multiplier to include reserve buffer |  | 1X | 20X | 40X | 60X |
-| H2O |  | 4.44 | 88.8 | 177.6 | 266.4 |
-| Naica Multiplex PCR MasterMix 5X | 1X | 1.6 | 32 | 64 | 96 |
-| Buffer B | 4% | 0.32 | 6.4 | 12.8 | 19.2 |
-| Probe and Primer Mix 25X | 1X | 0.64 | 12.8 | 25.6 | 38.4 |
-| Subtotal Volume |  | 7 | 140 | 280 | 420 |
-| DNA Sample |  | 1 |  |  |  |
-| Final Volume |  | 25 |  |  |  |
-
 8. For 24 samples prepare mix as indicated in table (we use 30X calculation to provide sufficient buffer).
-9. Add 23ul of above mastermix into individual tubes (For Opal add 7ul of mastermix). **Top tip:** Use p20 and pipette 2x 11.5ul for better accuracy.
+9. Add 23ul of above mastermix into individual tubes **Top tip:** Use p20 and pipette 2x 11.5ul for better accuracy.
 10. Add 2ul of DNA sample from phase 1 into individual tubes (For Opal add 1ul of DNA sample)
-11. **Top tip:** Spin these samples in a tabletop centrifuge for a few seconds to mix evenly.
+11. **Top tip:** Spin these samples in a tabletop centrifuge for a few seconds to mix evenly and reduce risk of air bubble formation.
 12. Prepare sapphire chip - take white port off.
-13. Load Sapphire chip with 25ul of above by dropping liquid onto top of oil and cover with white adapter (Load Opal chip with 8ul, for Opal get rid of any remaining air bubbles with opal pen)
+13. Load Sapphire chip with 25ul of above by dropping liquid onto top of oil and cover with white adapter
 
 ### Phase 4 - Run ddPCR
 
@@ -165,6 +134,10 @@ Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 sampl
 
 ## Protocol Updates
 
+### 17 Jun 2022
+
+- Moving forwards, decision confirmed to run ND2/GAPDH duplex to obtain both genomic and mitochondrial readouts
+
 ### 6 Jun 2022
 
 - Further attempt with GAPDH
@@ -188,3 +161,34 @@ Reference table for calculation (use 9 for 8 samples/2 chips and 13 for 12 sampl
 
 - GAPDH gene did not amplify well. (6 June 2022 update - likely because sample did not have much genomic cfDNA in first place, retested on new array of samples and primer-probe confirmed to be working)
 - GAPDH amplification is now deprecated. (6 June 2022 update - because COX3 and ND2 are correlated at 0.997, plan to transition to GAPDH/ND2 duplex)
+
+## Deprecated Opal Tables
+
+### Opal primer and probe mix
+
+| Reagents | Mitochondrial DNA primers (COX3/ND2 Duplex) |  |  |
+|---|---|---|---|
+|  | 16 samples | 32 samples | 48 samples |
+| ND2 Forward Primer | 2.5ul | 5ul | 5ul |
+| ND2 Reverse Primer | 2.5ul | 5ul | 5ul |
+| ND2 Probe | 1.25ul | 2.5ul | 2.5ul |
+| COX3 Forward Primer | 2.5ul | 5ul | 5ul |
+| COX3 Reverse Primer | 2.5ul | 5ul | 5ul |
+| COX3 Probe | 1.25ul | 2.5ul | 2.5ul |
+| Nuclease free water | 7.5ul | 15ul | 15ul |
+| Total Volume | 20ul | 40ul | 40ul |
+
+### Opal Mastermix
+
+| Reagents | Mitochondrial DNA primers (COX3/ND2 Duplex) |  |  |  |  |
+|---|---|---|---|---|---|
+| Final Conc. | Volume (ul) | Volume (ul) | Volume (ul) | Volume (ul) |  |
+| Desired Number of Samples |  |  | 16 actual samples | 32 actual samples | 48 actual samples |
+| Sample multiplier to include reserve buffer |  | 1X | 20X | 40X | 60X |
+| H2O |  | 4.44 | 88.8 | 177.6 | 266.4 |
+| Naica Multiplex PCR MasterMix 5X | 1X | 1.6 | 32 | 64 | 96 |
+| Buffer B | 4% | 0.32 | 6.4 | 12.8 | 19.2 |
+| Probe and Primer Mix 25X | 1X | 0.64 | 12.8 | 25.6 | 38.4 |
+| Subtotal Volume |  | 7 | 140 | 280 | 420 |
+| DNA Sample |  | 1 |  |  |  |
+| Final Volume |  | 25 |  |  |  |
